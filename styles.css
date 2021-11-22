@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --gray-text: #9298B3;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    font-size: 16px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    --padding: 25px; 
+    background-color: white;
+    width: 350px;  
+    margin: 5rem auto; /* Bit of a hard-code fix*/  
+    border-radius: 15px; 
+    overflow: hidden;
+ 
+}
+
+.card-header {
+    overflow: hidden;
+    max-height: 200px; 
+    
+}
+
+/* Fix img positioning*/
+
+.card-header img {
+    width: 100%;
+}
+
+.card-text {
+    padding: 0 var(--padding);
+    text-align: center;
+}
+
+.card-text h1 {
+    font-size: 1.5rem; 
+}
+
+.card-text p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--gray-text);
+    line-height: 1.5;
+    padding: 0 var(--padding);
+}
+
+.card-plan {
+    padding: var(--padding);
+    margin: 0 20px; 
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+}
+
+.card-plan-left {
+    display: flex; 
+}
+
+.card-plan-left img {
+    width: 50%; 
+    height: 50%; 
+}
+
+.card-plan-left-text {
+    font-size: 0.7rem;
+    
+}
+.card-footer {
+    padding: var(--padding);
+
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 0; 
+    margin-bottom: 1em; 
+}
